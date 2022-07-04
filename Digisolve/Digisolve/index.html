@@ -6,21 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digisove - The Digital Agency For Winners</title>
     <script src="https://kit.fontawesome.com/dfd29d6025.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="vendors/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="vendors/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="vendors/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Work+Sans:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="vendors/css/fluid.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="resources/css/style2.css">
+    <link rel="stylesheet" href="resources/css/media-query.css">
 </head>
 <body>
     <!-- <div class="row"><h1>Digisolve</h1></div> -->
-    <header>
+    <header id="home">
         <nav class="bg">
             <img src="resources/img/digisolve-logo.png" alt="logo" class="logo">
             <ul class="main-nav">
-                <a href="#"><li>Home</li></a>
-                <a href="#"><li>Contact</li></a>
-                <a href="#"><li>About</li></a>
+                <a href="#home"><li>Home</li></a>
+                <a href="#contact"><li>Contact</li></a>
+                <a href="#about"><li>About</li></a>
             </ul>
         </nav>
         <div class="header-box">
@@ -28,18 +37,18 @@
             <h1>Digital Agency</h1>
             <h2>The one stop for all your solutions</h2>
            </div>
-           <a href="#" class="btn btn-full">Get a quote today</a>
+           <a href="#" class="btn btn-full js--scroll">Get a quote today</a>
         </div>
     </header>
-    <section class="about-section">
+    <section class="about-section js--about-section" id="about">
         <div class="row">
-            <div class="col span_1_of_2 about-box">
+            <div class="col span_1_of_2 about-box js-about-box">
                 <h2 class="about-heading">A Digital Agency Focused On Growing Your Online Presence</h2>
                 <p class="about-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque et repudiandae facere, sit officia corrupti?</p>
                 <p class="about-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem perferendis accusamus et qui pariatur aliquid!</p>
                 <a href="#" class="btn btn-ghost">Read More</a>
             </div>
-            <div class="col span_1_of_2 about-box">
+            <div class="col span_1_of_2 about-box js-about-box">
                 <img src="resources/img/about-img.jpg" alt="photo of laptop" class="laptop-image">
             </div>
         </div>
@@ -257,7 +266,7 @@
         </div>
     </section>
 
-    <section class="contact-section">
+    <section class="contact-section js--contact" id="contact">
         <div class="row">
             <h2 class="package-heading">We're happy to hear from you</h2>
         </div>
@@ -307,5 +316,8 @@
         
     </section>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
 </body>
 </html>
